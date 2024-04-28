@@ -3,11 +3,17 @@
 <form>
   <div>
     <div>
-      <img src="" alt="">
+      <img src="" alt="" />
     </div>
-    <input type="file" name="" id="">
+    <input type="file" name="" id="" />
   </div>
   <div>
-    
+    @for (format of formats; track $index) {
+    <label [for]="'format-' + $index">
+      <input type="radio" name="format" [id]="'format-' + $index" />
+      {{ format }}
+    </label>
+    }
+    <input type="submit" value="CONVERTIR" />
   </div>
 </form>
