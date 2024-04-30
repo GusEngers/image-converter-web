@@ -1,8 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-$background: #283d3e;
+$background-color: #283d3e;
 $button-color: #d62e2e;
 $text-color: #ffffc0;
 $loader-color: #d6c496;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+}
